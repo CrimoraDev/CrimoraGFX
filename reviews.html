@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/src/output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
 </head>
 <body class="text-white font-sans antialiased bg-[url(./images/background.png)] bg-cover bg-center h-screen">
     <header class="bg-gray-800 p-5 z-50">
@@ -71,7 +71,7 @@
 
     <!-- About Me -->
     <figure class="md:flex p-8 md:p-4 place-items-center justify-center">
-        <img class="w-64 h-64 md:w-128 md:h-auto md:rounded-none rounded-full aspect-square" src="/src/images/avatar-reviews.png">
+        <img class="w-64 h-64 md:w-128 md:h-auto md:rounded-none rounded-full aspect-square" src="images/avatar-reviews.png">
         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
             <h3 class="text-4xl font-bold">
                 <span class="text-crimson px-1">Reviews</span> & Ratings
@@ -96,13 +96,13 @@
     </div>
 
     <!-- Link External JavaScript File -->
-    <script src="/src/script.js"></script>
+    <script src="script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", async () => {
             const reviewsContainer = document.getElementById("reviews-container");
 
             try {
-                const response = await fetch("/src/data.json");
+                const response = await fetch("data.json");
                 const data = await response.json();
                 const reviews = data.reviews;
 
